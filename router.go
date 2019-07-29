@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	. "gin-restapi/apis"
 
 	"github.com/gin-gonic/gin"
@@ -20,6 +21,7 @@ func initRouter() *gin.Engine {
 	router.PUT("/person/:id", ModPersonApi)
 
 	router.DELETE("/person/:id", DelPersonApi)
-
+	fmt.Println("11111")
 	return router
+
 }
